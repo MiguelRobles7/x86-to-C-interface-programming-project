@@ -3,7 +3,7 @@
 #include <time.h>
 
 // Perform the dot product of two vectors
-float dot_product(float *A, float *B, int n) {
+float dot_product(float* A, float* B, int n) {
     float result = 0.0f;
     for (int i = 0; i < n; i++) {
         result += A[i] * B[i];
@@ -15,8 +15,8 @@ int main() {
     int x;
     scanf("%d", &x);
     const int n = 1 << x;
-    float *A = (float*)malloc(n * sizeof(float));
-    float *B = (float*)malloc(n * sizeof(float));
+    float* A = (float*)malloc(n * sizeof(float));
+    float* B = (float*)malloc(n * sizeof(float));
 
     // Initialize vectors A and B with random values
     srand(time(NULL));
