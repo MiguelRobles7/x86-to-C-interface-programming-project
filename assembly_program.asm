@@ -1,6 +1,4 @@
 ; assembly part 
-%include "io64.inc"
-
 section .data
     ask_size db "Enter Size of Vector: ",13,10,0
     print_sdot db "Sdot: %1f",10,0
@@ -20,10 +18,10 @@ section .text
     bits 64
     default rel
 
-global main
+global asm_run
 extern printf, scanf
 
-main:
+asm_run:
     ; clear needed registers
     xorps xmm0, xmm0  
     xorps xmm1, xmm1
