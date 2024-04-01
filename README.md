@@ -1,6 +1,6 @@
-x86-to-C interface programming project
-ROBLES, DONNALD MIGUEL L. & SALES, LIAM MIGUEL V. - S17
-LBYARCH GROUP 6 MCO2
+### x86-to-C interface programming project
+### ROBLES, DONNALD MIGUEL L. & SALES, LIAM MIGUEL V. - S17
+### LBYARCH GROUP 6 MCO2
 
 # Kernel Performance Analysis
 
@@ -46,7 +46,8 @@ In this analysis, we compare the performance of the dot product kernel implement
 ### Performance Comparison
 - For both vector sizes, the assembly implementation consistently outperforms the C implementation in terms of execution time.
 - The difference in performance becomes more pronounced as the size of the vectors increases.
-- This suggests that the use of functional scalar SIMD registers and floating-point instructions in assembly language provides significant performance benefits over pure C implementation, particularly for computationally intensive tasks like dot product computation.
+- This suggests that the use of functional scalar SIMD registers and floating-point instructions in assembly language provides significant performance benefits over pure C implementation, particularly for computationally intensive tasks like dot product   
+  computation.
 - The assembly implementation allows for fine-grained control over optimization strategies, potentially enabling more efficient use of hardware resources compared to compiler optimizations applied to C code.
 - NASM allows developers to exploit parallelism at a lower level, potentially achieving better performance through optimized instruction scheduling and resource utilization.
 - Assembly code can be optimized for cache efficiency and reduced memory access, which can lead to improved performance, especially for large datasets.
