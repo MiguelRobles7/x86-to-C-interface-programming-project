@@ -70,15 +70,15 @@ In this analysis, we compare the performance of the dot product kernel implement
 
 ### **Vector Size  2^24**
 <div style="display: flex;">
-    <img src="" style="width: 78.17px; height: 200px;">
-    <img src="" style="width: 78.17px; height: 200px;">
-    <img src="" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/148d62c6-ac64-429d-8cc1-ea96be4c4596" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/77b06f2b-2496-4483-b9bd-c8f91eb5e1c0" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/bc27a83b-1225-4488-b487-477b014d52d3" style="width: 78.17px; height: 200px;">
 </div>
   
-  - Assembly Average Time: 
-  - C Average Time:
+  - Assembly Average Time: 0.021233
+  - C Average Time: 0.025300
 <hr>
-    
+
 ### **Vector Size  2^30**
 <div style="display: flex;">
     <img src="" style="width: 78.17px; height: 200px;">
