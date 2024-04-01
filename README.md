@@ -46,7 +46,7 @@ In this analysis, we compare the performance of the dot product kernel implement
   - C Average Time: 0.065233
 
 - **Vector Size  2^30**
-- 
+  
 <div style="display: flex;">
     <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/fc82bab3-cf2b-46ba-ac20-392ce6329fa4" style="width: 78.17px; height: 200px;">
     <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/c97ff705-26df-44f1-b582-fa8c38a4abf8" style="width: 78.17px; height: 200px;">
@@ -58,12 +58,35 @@ In this analysis, we compare the performance of the dot product kernel implement
  
 ### Release Mode
 - **Vector Size  2^20**
-  - Assembly Average Time: 
-  - C Average Time: 
+
+<div style="display: flex;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/6f0b9ea1-48df-4188-908b-0848acef6d4a" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/ead4ed0f-9eaa-4ae9-bf41-65cd339bf780" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/06942830-5daf-4f42-ae65-95a5c66fd820" style="width: 78.17px; height: 200px;">
+</div>
+
+  - Assembly Average Time: 0.001533
+  - C Average Time: 0.001900
+  - 
 - **Vector Size  2^24**
+
+<div style="display: flex;">
+    <img src="" style="width: 78.17px; height: 200px;">
+    <img src="" style="width: 78.17px; height: 200px;">
+    <img src="" style="width: 78.17px; height: 200px;">
+</div>
+  
   - Assembly Average Time: 
-  - C Average Time: 
+  - C Average Time:
+    
 - **Vector Size  2^30**
+
+<div style="display: flex;">
+    <img src="" style="width: 78.17px; height: 200px;">
+    <img src="" style="width: 78.17px; height: 200px;">
+    <img src="" style="width: 78.17px; height: 200px;">
+</div>
+
   - Assembly Average Time: 
   - C Average Time: 
 
