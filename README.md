@@ -26,17 +26,27 @@ In this analysis, we compare the performance of the dot product kernel implement
 - **Vector Size  2^20**
 
 <div style="display: flex;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/bd998b77-84dd-4178-ac4d-80fd2f2f8904" alt="Image 1" style="width: 33%;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/86dff322-631a-4479-b6d3-7814e4c41096" alt="Image 2" style="width: 33%;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/553d824a-de4c-4f51-aaca-6b2943f3799b" alt="Image 3" style="width: 33%;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/bd998b77-84dd-4178-ac4d-80fd2f2f8904" alt="Image 1" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/86dff322-631a-4479-b6d3-7814e4c41096" alt="Image 2" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/553d824a-de4c-4f51-aaca-6b2943f3799b" alt="Image 3" style="width: 78.17px; height: 200px;">
 </div>
 
   - Assembly Average Time: 0.003300
   - C Average Time: 0.004167
+    
 - **Vector Size  2^24**
+
+<div style="display: flex;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/e28a987d-c8b2-4181-8dee-952fcb260c50" alt="Image 1" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/5b21f20e-13c2-4d46-b4db-a9d27f524b4b" alt="Image 2" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/44743ebb-5415-4db0-aff9-0c222c77f14e" alt="Image 3" style="width: 78.17px; height: 200px;">
+</div>
+
   - Assembly Average Time: 0.050133
   - C Average Time: 0.065233
+
 - **Vector Size  2^30**
+
   - Assembly Average Time: (still processing ill add when its done)
   - C Average Time:
  
