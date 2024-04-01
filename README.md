@@ -21,8 +21,16 @@ In this analysis, we compare the performance of the dot product kernel implement
 
 ## Results
 
+
 ### Debug Mode
 - **Vector Size  2^20**
+
+<div style="display: flex;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/bd998b77-84dd-4178-ac4d-80fd2f2f8904" alt="Image 1" style="width: 33%;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/86dff322-631a-4479-b6d3-7814e4c41096" alt="Image 2" style="width: 33%;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/553d824a-de4c-4f51-aaca-6b2943f3799b" alt="Image 3" style="width: 33%;">
+</div>
+
   - Assembly Average Time: 0.003300
   - C Average Time: 0.004167
 - **Vector Size  2^24**
