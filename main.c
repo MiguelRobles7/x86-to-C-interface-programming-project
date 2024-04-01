@@ -1,15 +1,68 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <Windows.h>
+#include <time.h>
 
-extern void asm_run();
-extern void c_run();
+extern float asm_run(float A, float B);
+extern float c_run(float A, float B);
 
 int main() {
-	printf("ASSEMBLY PROGRAM RUN\n");
-	asm_run();
-	printf("C PROGRAM RUN\n");
-	c_run();
+	int n = 0; // Vector Size
+	int checker;
+
+	printf("Input Vector Size (n): ");
+	scanf_s("%d", &n);
+
+	float* A = (float*)malloc(n * sizeof(float));
+	float* B = (float*)malloc(n * sizeof(float));
+
+	int runs_needed = 30; // At least 30 runs
+	
+	double asm_time = 0;
+	double c_time = 0;
+
+	float asm_sdot = 0;
+	float c_sdot = 0;
+
+	srand(time(NULL));
+
+	for (int i = 0; i < runs_needed; i++) {
+		checker = 0;
+
+		// Fill vectors A & B of size n with random values
+		for (int j = 0; j < n; j++) {
+			A[j] = (float)rand() / RAND_MAX;
+			B[j] = (float)rand() / RAND_MAX;
+		}
+
+		// Measure Kernel Time
+		clock_t begin = clock();
+		for (int k = 0; k < n; k++) {
+			asm_sdot += asm_run(A[k], B[k]);
+		}
+		clock_t end = clock();
+		double run_time = (double)(end - begin);
+
+		printf("\nRun %d\n", i+1);
+		printf("Assembly Sdot: %f\n", asm_sdot);
+		printf("Assembly Time: %f\n", run_time);
+
+		asm_time += run_time;
+		asm_sdot = 0;
+
+		// Measure C Time
+		clock_t c_begin = clock();
+		for (int k = 0; k < n; k++) {
+			c_sdot += c_run(A[k], B[k]);
+		}
+		clock_t c_end = clock();
+		run_time = (double)(c_end - c_begin);
+
+		printf("C Sdot: %f\n", c_sdot);
+		printf("C Time: %f\n", run_time);
+
+		c_time += run_time;
+		c_sdot = 0;
+	}
 
 	return 0;
 }
