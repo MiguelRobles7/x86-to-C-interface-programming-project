@@ -7,7 +7,6 @@ extern float c_run(float A, float B);
 
 int main() {
 	int n = 0; // Vector Size
-	int checker;
 
 	printf("Input Vector Size (n): ");
 	scanf_s("%d", &n);
@@ -26,8 +25,6 @@ int main() {
 	srand(time(NULL));
 
 	for (int i = 0; i < runs_needed; i++) {
-		checker = 0;
-
 		// Fill vectors A & B of size n with random values
 		for (int j = 0; j < n; j++) {
 			A[j] = (float)rand() / RAND_MAX;
@@ -40,14 +37,13 @@ int main() {
 			asm_sdot += asm_run(A[k], B[k]);
 		}
 		clock_t end = clock();
-		double run_time = (double)(end - begin);
+		double run_time = (double)(end - begin)/CLOCKS_PER_SEC;
 
 		printf("\nRun %d\n", i+1);
 		printf("Assembly Sdot: %f\n", asm_sdot);
 		printf("Assembly Time: %f\n", run_time);
 
 		asm_time += run_time;
-		asm_sdot = 0;
 
 		// Measure C Time
 		clock_t c_begin = clock();
@@ -55,14 +51,20 @@ int main() {
 			c_sdot += c_run(A[k], B[k]);
 		}
 		clock_t c_end = clock();
-		run_time = (double)(c_end - c_begin);
+		run_time = (double)(c_end - c_begin)/CLOCKS_PER_SEC;
 
 		printf("C Sdot: %f\n", c_sdot);
 		printf("C Time: %f\n", run_time);
 
 		c_time += run_time;
+
+		if (c_sdot == asm_sdot) printf("Equal\n");
+		else printf("Not Equal\n");
+
+		asm_sdot = 0;
 		c_sdot = 0;
 	}
-
+	printf("\nAssembly Average Time: %f", asm_time / runs_needed);
+	printf("\nC Average Time: %f", c_time/runs_needed);
 	return 0;
 }
