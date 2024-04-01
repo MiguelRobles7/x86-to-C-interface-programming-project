@@ -13,7 +13,7 @@ In this analysis, we compare the performance of the dot product kernel implement
 - Vector size (n):
   - 2^20 = 1048576
   - 2^24 = 16777216
-  - 2^30 = 1073741824
+  - 2^26 = 67108864
 - Number of iterations for averaging each test case: 30
 - Compiler optimization settings:
   - Debug mode
@@ -25,69 +25,69 @@ In this analysis, we compare the performance of the dot product kernel implement
 ## Debug Mode
 ### **Vector Size  2^20**
 <div style="display: flex;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/bd998b77-84dd-4178-ac4d-80fd2f2f8904" style="width: 78.17px; height: 200px;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/86dff322-631a-4479-b6d3-7814e4c41096" style="width: 78.17px; height: 200px;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/553d824a-de4c-4f51-aaca-6b2943f3799b" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/c3b970a8-9b97-49d9-9282-14ae77cb3548" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/e4580436-24b2-4463-bc9c-187075d2cad7" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/c828b2c5-a0c4-4b6c-93df-18c4a8afe99b" style="width: 78.17px; height: 200px;">
 </div>
 
-  - Assembly Average Time: 0.003300
-  - C Average Time: 0.004167
+  - Assembly Average Time: 0.003200
+  - C Average Time: 0.003967
 <hr>
     
 ### **Vector Size  2^24**
 <div style="display: flex;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/5b21f20e-13c2-4d46-b4db-a9d27f524b4b" style="width: 78.17px; height: 200px;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/44743ebb-5415-4db0-aff9-0c222c77f14e" style="width: 78.17px; height: 200px;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/e28a987d-c8b2-4181-8dee-952fcb260c50" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/e2517139-83db-483f-a1fd-78363198707a" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/b4196356-7a64-4d05-ad1d-316170b9ecb7" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/8a034f35-db93-41d3-b15f-37bf2e16158e" style="width: 78.17px; height: 200px;">
 </div>
 
-  - Assembly Average Time: 0.050133
-  - C Average Time: 0.065233
+  - Assembly Average Time:  0.049567
+  - C Average Time:  0.064467
 <hr>
 
-### **Vector Size  2^30** 
+### **Vector Size  2^26** 
 <div style="display: flex;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/fc82bab3-cf2b-46ba-ac20-392ce6329fa4" style="width: 78.17px; height: 200px;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/17579ed8-ae6a-4792-889d-8b24f979afe2" style="width: 78.17px; height: 200px;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/c97ff705-26df-44f1-b582-fa8c38a4abf8" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/2c269891-0e62-4b4b-a195-7315f566685d" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/7d3265df-b67c-48d3-8534-a932d5327d39" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/4fd9f8c1-306c-4b4a-8c47-f90c3d090fc8" style="width: 78.17px; height: 200px;">
 </div>
 
-  - Assembly Average Time: 3.278633
-  - C Average Time: 4.246267
+  - Assembly Average Time: 0.193867
+  - C Average Time: 0.257567
  <hr>
 
 ## Release Mode
 ### **Vector Size  2^20**
 <div style="display: flex;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/6f0b9ea1-48df-4188-908b-0848acef6d4a" style="width: 78.17px; height: 200px;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/ead4ed0f-9eaa-4ae9-bf41-65cd339bf780" style="width: 78.17px; height: 200px;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/06942830-5daf-4f42-ae65-95a5c66fd820" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/4056ca74-640e-413d-89f1-c95126886f19" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/909ab5b4-ee1c-4e90-8935-3bd9c7a42729" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/edf878e4-abe4-4cd2-858a-70431f44605d" style="width: 78.17px; height: 200px;">
 </div>
 
-  - Assembly Average Time: 0.001533
-  - C Average Time: 0.001900
+  - Assembly Average Time:0.001433
+  - C Average Time:  0.001833
 <hr>
 
 ### **Vector Size  2^24**
 <div style="display: flex;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/77b06f2b-2496-4483-b9bd-c8f91eb5e1c0" style="width: 78.17px; height: 200px;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/148d62c6-ac64-429d-8cc1-ea96be4c4596" style="width: 78.17px; height: 200px;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/bc27a83b-1225-4488-b487-477b014d52d3" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/de45a7b4-5665-4df7-a0e2-ad310c586317" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/b4eec4e0-800a-45dc-9532-52b1ae2a810b" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/75222dbb-b5da-4a65-8557-2be038b4558e" style="width: 78.17px; height: 200px;">
 </div>
   
-  - Assembly Average Time: 0.021233
-  - C Average Time: 0.025300
+  - Assembly Average Time: 0.020833
+  - C Average Time:  0.025033
 <hr>
 
-### **Vector Size  2^30**
+### **Vector Size  2^26**
 <div style="display: flex;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/83a01390-4e54-4e61-a0f5-3d79e72a2467" style="width: 78.17px; height: 200px;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/0fffe8c6-6ff0-4e80-874b-bff0547e53f3" style="width: 78.17px; height: 200px;">
-    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/47b19061-32fb-4b88-9ddd-cc57c2fdc502" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/96caaacf-a04a-4b03-abe8-93124a8065cc" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/bba5508a-2dd5-4327-8e68-7a6458baf516" style="width: 78.17px; height: 200px;">
+    <img src="https://github.com/MiguelRobles7/Assembly-to-C-Interface-Programming-Project/assets/132888676/276f98c1-a4de-465b-91c2-1fd518f1b9d5" style="width: 78.17px; height: 200px;">
 </div>
 
-  - Assembly Average Time: 1.404767
-  - C Average Time:  1.624933
+  - Assembly Average Time: 0.082667
+  - C Average Time: 0.098900
 <hr>
 
 ## Analysis
